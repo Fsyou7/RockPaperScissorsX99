@@ -101,4 +101,40 @@ function getGameWinner (){
     }
 }
 
-function setComputerMoves (){}
+function setComputerMoves (){
+    const randomType1 = Math.ceil(Math.random() * 3);
+    const randomType2 = Math.ceil(Math.random() * 3);
+    const randomType3 = Math.ceil(Math.random() * 3);
+    const randomValue1 = Math.ceil(Math.random() * 97);
+    const randomValue2 = Math.ceil(Math.random() * (98 - randomValue1));
+    const randomValue3 = Math.ceil(Math.random() * (99 - (randomValue1 + randomValue2)));
+    
+
+    if (randomType1 === 1){
+        playerTwoMoveOneType = 'Rock';
+    } else if (randomType1 === 2){
+        playerTwoMoveOneType = 'Paper';
+    } else if (randomType1 === 3){
+        playerTwoMoveOneType = 'Scissors';
+    }
+
+    if (randomType2 === 1){
+        playerTwoMoveTwoType = 'Rock';
+    } else if (randomType2 === 2){
+        playerTwoMoveTwoType = 'Paper';
+    } else if (randomType2 === 3){
+        playerTwoMoveTwoType = 'Scissors';
+    }
+
+    if (randomType3 === 1){
+        playerTwoMoveThreeType = 'Rock';
+    } else if (randomType3 === 2){
+        playerTwoMoveThreeType = 'Paper';
+    } else if (randomType3 === 3){
+        playerTwoMoveThreeType = 'Scissors';
+    }
+
+    playerTwoMoveOneValue = randomValue1;
+    playerTwoMoveTwoValue = randomValue2;
+    playerTwoMoveThreeValue = randomValue3;
+}
