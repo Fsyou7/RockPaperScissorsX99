@@ -1,19 +1,19 @@
 // All code should be written in this file.
-const playerOneMoveOneType;
-const playerOneMoveTwoType;
-const playerOneMoveThreeType;
-const playerTwoMoveOneType;
-const playerTwoMoveTwoType;
-const playerTwoMoveThreeType;
-const playerOneMoveOneValue;
-const playerOneMoveTwoValue;
-const playerOneMoveThreeValue;
-const playerTwoMoveOneValue;
-const playerTwoMoveTwoValue;
-const playerTwoMoveThreeValue;
+var playerOneMoveOneType;
+var playerOneMoveTwoType;
+var playerOneMoveThreeType;
+var playerTwoMoveOneType;
+var playerTwoMoveTwoType;
+var playerTwoMoveThreeType;
+var playerOneMoveOneValue;
+var playerOneMoveTwoValue;
+var playerOneMoveThreeValue;
+var playerTwoMoveOneValue;
+var playerTwoMoveTwoValue;
+var playerTwoMoveThreeValue;
 
-const playerOneWins = 0;
-const playerTwoWins = 0;
+var playerOneWins = 0;
+var playerTwoWins = 0;
 
 function setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue){
     if (player === 'Player One'){
