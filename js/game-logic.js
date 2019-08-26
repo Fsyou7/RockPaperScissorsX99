@@ -100,3 +100,5 @@ function getGameWinner (){
         return 'Tie';
     }
 }
+
+function setComputerMoves (){}
