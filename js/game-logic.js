@@ -47,5 +47,37 @@ function getRoundWinner (round){
             //Player Two wins
             return 'Player Two'
         }
+    } else if (round === 2){
+        if(playerOneMoveTwoType === 'Rock' && playerTwoMoveTwoType === 'Scissors'  || playerOneMoveTwoType === 'Paper' && playerTwoMoveTwoType === 'Rock'
+        || playerOneMoveTwoType === 'Scissors' && playerTwoMoveTwoType === 'Paper' || playerOneMoveTwoType === 'Rock' && playerTwoMoveTwoType === 'Rock' 
+        && playerOneMoveTwoValue > playerTwoMoveTwoValue
+        || playerOneMoveTwoType === 'Paper' && playerTwoMoveTwoType === 'Paper'
+        && playerOneMoveTwoValue > playerTwoMoveTwoValue
+        || playerOneMoveTwoType === 'Scissors' && playerTwoMoveTwoType === 'Scissors' && playerOneMoveTwoValue > playerTwoMoveTwoValue){
+            //Player One Wins
+            return 'Player One'
+        } else if (playerOneMoveTwoType === playerTwoMoveTwoType && playerOneMoveTwoValue === playerTwoMoveTwoValue){
+            // It's a Tie
+            return 'Tie'
+        } else {
+            //Player Two wins
+            return 'Player Two'
+        }
+    } else if (round === 3){
+        if(playerOneMoveThreeType === 'Rock' && playerTwoMoveThreeType === 'Scissors'  || playerOneMoveThreeType === 'Paper' && playerTwoMoveThreeType === 'Rock'
+        || playerOneMoveThreeType === 'Scissors' && playerTwoMoveThreeType === 'Paper' || playerOneMoveThreeType === 'Rock' && playerTwoMoveThreeType === 'Rock' 
+        && playerOneMoveThreeValue > playerTwoMoveThreeValue
+        || playerOneMoveThreeType === 'Paper' && playerTwoMoveThreeType === 'Paper'
+        && playerOneMoveThreeValue > playerTwoMoveThreeValue
+        || playerOneMoveThreeType === 'Scissors' && playerTwoMoveThreeType === 'Scissors' && playerOneMoveThreeValue > playerTwoMoveThreeValue){
+            //Player One Wins
+            return 'Player One'
+        } else if (playerOneMoveThreeType === playerTwoMoveThreeType && playerOneMoveThreeValue === playerTwoMoveThreeValue){
+            // It's a Tie
+            return 'Tie'
+        } else {
+            //Player Two wins
+            return 'Player Two'
+        }
     }
 }
