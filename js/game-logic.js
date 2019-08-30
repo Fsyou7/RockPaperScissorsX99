@@ -15,23 +15,6 @@ var playerTwoMoveThreeValue;
 var playerOneWins = 0;
 var playerTwoWins = 0;
 
-<<<<<<< HEAD
-function setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue){
-    if (player === 'Player One'){
-        playerOneMoveOneType = moveOneType;
-        playerOneMoveTwoType = moveTwoType;
-        playerOneMoveThreeType = moveThreeType;
-        playerOneMoveOneValue =  moveOneValue;
-        playerOneMoveTwoValue =  moveTwoValue;
-        playerOneMoveThreeValue =  moveThreeValue;
-    } else if (player === 'Player Two'){
-        playerTwoMoveOneType = moveOneType;
-        playerTwoMoveTwoType = moveTwoType;
-        playerTwoMoveThreeType = moveThreeType;
-        playerTwoMoveOneValue =  moveOneValue;
-        playerTwoMoveTwoValue =  moveTwoValue;
-        playerTwoMoveThreeValue =  moveThreeValue;
-=======
 const ROCK = 'rock';
 const PAPER = 'paper';
 const SCISSORS = 'scissors';
@@ -43,7 +26,6 @@ const setPlayerMoves = (player, moveOneType, moveOneValue, moveTwoType, moveTwoV
 
     if(moveOneValue < 1|| moveTwoValue < 1 || moveThreeValue < 1 ){
         return;
->>>>>>> getRoundWinner
     }
 
     if(moveOneValue > 99 || moveTwoValue > 99 || moveThreeValue > 99 ){
